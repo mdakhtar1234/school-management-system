@@ -1,0 +1,139 @@
+ 
+        body{
+            background:#eef3f4;
+        }
+
+        .form-container{
+            max-width:900px;
+            margin:40px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        label{
+            font-weight:600;
+        }
+    
+
+
+
+       /* Attendence of pages  */
+
+
+         .attendance-box{
+        max-width:1200px;
+        margin:30px auto;
+        border:1px solid #cfd8dc;
+        background:white;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header{
+        background:#1976d2;
+        color:white;
+        padding:15px;
+        font-size:24px;
+        font-weight:bold;
+    }
+
+    .section-title{
+        color:#28a745;
+        font-size:22px;
+        font-weight:bold;
+        margin-bottom:20px;
+    }
+
+    .btn-custom{
+        width:200px;
+        background:#00a8e8;
+        color:white;
+        font-weight:bold;
+    }
+
+    .table th{
+        background:#00a8e8;
+        color:white;
+        text-align:center;
+    }
+
+    /* Fees of card*/
+
+    .fee-form{
+        max-width:850px;
+        margin:30px auto;
+        background:white;
+        border-radius:30px;
+        padding:40px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    h1{
+        text-align:center;
+        color:#5b7d4d;
+        margin-bottom:30px;
+    }
+
+    label{
+        color:#6d7c5b;
+        font-size:18px;
+        font-weight:600;
+        margin-bottom:8px;
+    }
+
+    .form-control,
+    .form-select{
+      
+        border-radius:18px;
+        height:55px;
+    }
+
+    .btn-pay{
+        background:#4caf50;
+        color:white;
+        font-size:18px;
+        font-weight:bold;
+        padding:12px 40px;
+        border:none;
+        border-radius:15px;
+    }
+
+    .btn-pay:hover{
+        background:#388e3c;
+    }
+
+
+    /* notice board for message*/
+  body{
+        background:#eaf4ff;
+    }
+
+    .notice-board{
+        max-width:1100px;
+        margin:20px auto;
+        background:#d8ebfc;
+        border:1px solid #5b8db8;
+        border-radius:15px;
+        padding:20px;
+        box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .title{
+        text-align:center;
+        font-size:3rem;
+        margin-bottom:20px;
+    }
+
+    textarea{
+        resize:none;
+    }
+
+    .table th{
+        background:#f8f9fa;
+    }
