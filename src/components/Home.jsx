@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 function Home() {
   return (
@@ -106,12 +107,8 @@ function Home() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-dark text-white text-center py-3">
-        <p className="mb-0">
-          © 2026 School Management System | All Rights Reserved
-        </p>
-      </footer>
+ <Footer/>
+     
     </></>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 export default function AddmissionForm() {
     return (
@@ -6,7 +7,7 @@ export default function AddmissionForm() {
         <>
             <hr/>
             <div class="container">
-                <div class="form-container">
+                <div class="form-container m-4">
 
                     <h2>School Admission Form</h2>
 
@@ -201,7 +202,7 @@ export default function AddmissionForm() {
                 </div>
             </div>
 
-
+         <Footer/>
         </>
     )
 }
