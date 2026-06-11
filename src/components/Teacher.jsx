@@ -1,7 +1,7 @@
 import React from 'react'
 import teachers from '../assets/TeacherData';
 function Teacher() {
-  
+
   return (
     <div className="container mt-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
@@ -13,7 +13,14 @@ function Teacher() {
       </div>
 
       <div className="card shadow">
-        <div className="card-body">
+        <div className="card-body"
+          style={
+            {
+              maxHeight: "400px",
+              overflowY: "auto",
+              overflowX: "auto",
+            }}
+        >
           <table className="table table-bordered table-hover text-center">
             <thead className="table-dark">
               <tr>

@@ -8,14 +8,19 @@ function Result() {
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2>Student Results</h2>
 
-        <button className="btn btn-primary">
-          Add Result
-        </button>
+  
       </div>
 
-      <div className="card shadow">
-        <div className="card-body">
-          <table className="table table-bordered table-hover text-center">
+<div className="container-fluid-py-4">
+  <div className="card shadow-lg">
+    <div className="card-body  "
+    style={
+      {maxHeight: "400px",
+      overflowY: "auto",
+      overflowX: "auto",
+}}
+    >
+       <table className="table table-responsive-sm table-bordered table-hover text-center">
             <thead className="table-dark">
               <tr>
                 <th>ID</th>
@@ -56,9 +61,12 @@ function Result() {
               ))}
             </tbody>
           </table>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
+      
+      </div>
+  
   );
 }
 
