@@ -2,8 +2,102 @@ import React from 'react'
 import students from '../assets/studentsData'
 function Students() {
   
+   
+
+
 
   return (
+
+
+
+    
+
+
+
+
+
+
+   <>
+
+
+<div className="container mt-5">
+      <div className="card shadow">
+        <div className="card-header text-center">
+          <h2>Student Registration Form</h2>
+        </div>
+
+        <div className="card-body">
+          <form>
+            {/* ID */}
+            <div className="mb-3">
+              <label className="form-label">Student ID</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter Student ID"
+              />
+            </div>
+
+            {/* Student Name */}
+            <div className="mb-3">
+              <label className="form-label">Student Name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter Student Name"
+              />
+            </div>
+
+            {/* Class */}
+            <div className="mb-3">
+              <label className="form-label">Class</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter Class"
+              />
+            </div>
+
+            {/* Roll No */}
+            <div className="mb-3">
+              <label className="form-label">Roll No</label>
+              <input
+                type="number"
+                className="form-control"
+                placeholder="Enter Roll Number"
+              />
+            </div>
+
+            {/* Contact */}
+            <div className="mb-3">
+              <label className="form-label">Contact Number</label>
+              <input
+                type="tel"
+                className="form-control"
+                placeholder="Enter Contact Number"
+              />
+            </div>
+
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+
+            <button
+              type="reset"
+              className="btn btn-secondary ms-2"
+            >
+              Reset
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
     <div className="container mt-4">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2>Student Management</h2>
@@ -50,7 +144,7 @@ function Students() {
           </table>
         </div>
       </div>
-    </div>
+    </div></>
   )
 }
 

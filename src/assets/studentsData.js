@@ -1,7 +1,7 @@
 const students = [
     {
       id: 1,
-      name: "Ali Khan",
+      name: "Ankur Kumar",
       class: "10th",
       rollNo: "101",
       contact: "9876543210",
@@ -22,7 +22,14 @@ const students = [
     },
     {
       id: 4,
-      name: "Aman Verma",
+      name: "Nusrat Parween",
+      class: "12th",
+      rollNo: "104",
+      contact: "9876543213",
+    },
+     {
+      id: 5,
+      name: "Md Chand",
       class: "12th",
       rollNo: "104",
       contact: "9876543213",

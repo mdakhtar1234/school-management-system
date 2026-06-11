@@ -1,6 +1,30 @@
-import React from 'react'
+import { useState,useEffect } from "react";
+
 
 function Dashboard() {
+
+const [studentCounter, setStudentCounter] = useState(0);
+const [teacherCounter, setTeacherCounter] = useState(0);
+const [attendanceCounter, setAttendanceCounter] = useState(0);
+const [noticeCounter, setNoticeCounter] = useState(0);
+
+const startCounter = (setter, max, step, speed) => {
+  const interval = setInterval(() => {
+    setter((prev) => {
+      if (prev < max) return prev + step;
+      clearInterval(interval);
+      return prev;
+    });
+  }, speed);
+};
+
+useEffect(() => {
+  startCounter(setStudentCounter, 500, 1, 10);
+  startCounter(setTeacherCounter, 400, 1, 20);
+  startCounter(setAttendanceCounter, 90, 5, 400);
+  startCounter(setNoticeCounter, 12, 2, 2000);
+}, []);
+
   return (
     <>
      <div className="container mt-4">
@@ -12,7 +36,7 @@ function Dashboard() {
           <div className="card text-center shadow border-0 bg-primary text-white">
             <div className="card-body">
               <h5>Total Students</h5>
-              <h2>500</h2>
+              <h2>{studentCounter}</h2>
             </div>
           </div>
         </div>
@@ -21,7 +45,7 @@ function Dashboard() {
           <div className="card text-center shadow border-0 bg-success text-white">
             <div className="card-body">
               <h5>Total Teachers</h5>
-              <h2>50</h2>
+              <h2>{teacherCounter}</h2>
             </div>
           </div>
         </div>
@@ -30,7 +54,7 @@ function Dashboard() {
           <div className="card text-center shadow border-0 bg-warning text-dark">
             <div className="card-body">
               <h5>Attendance</h5>
-              <h2>95%</h2>
+              <h2>{attendanceCounter}%</h2>
             </div>
           </div>
         </div>
@@ -39,7 +63,7 @@ function Dashboard() {
           <div className="card text-center shadow border-0 bg-danger text-white">
             <div className="card-body">
               <h5>Notices</h5>
-              <h2>12</h2>
+              <h2>{noticeCounter}</h2>
             </div>
           </div>
         </div>
