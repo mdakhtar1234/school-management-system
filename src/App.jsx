@@ -10,6 +10,7 @@ import Students from './components/Students'
 import Teacher from './components/Teacher'
 import Result from './components/Result'
 import Attendance from './components/Attendance'
+import Developer from './components/Developer'
 
 
 const routers = createBrowserRouter([
@@ -52,6 +53,11 @@ const routers = createBrowserRouter([
        {
         path:"result",
         element:<Result/>
+      },
+
+      {
+        path:"developer",
+        element:<Developer/>
       },
     ]
 

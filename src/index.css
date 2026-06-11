@@ -1,0 +1,27 @@
+body {
+  background: #f5f7fa;
+}
+
+.developer-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.developer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+img {
+  object-fit: cover;
+}
+
+.progress {
+  height: 22px;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  font-weight: bold;
+}
