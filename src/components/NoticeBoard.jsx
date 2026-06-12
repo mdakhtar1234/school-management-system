@@ -1,8 +1,10 @@
 import React from 'react'
 import notices from '../assets/NoticeBoardData';
+import Footer from './Footer';
 function NoticeBoard() {
    
   return (
+    <>
     <div className="container mt-4">
       <h2 className="text-center mb-4">Notice Board</h2>
 
@@ -26,6 +28,8 @@ function NoticeBoard() {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

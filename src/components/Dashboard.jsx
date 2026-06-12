@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import Footer from "./Footer";
 
 
 function Dashboard() {
@@ -110,6 +111,7 @@ useEffect(() => {
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   )
 }

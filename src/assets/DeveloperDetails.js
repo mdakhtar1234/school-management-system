@@ -20,6 +20,11 @@ const DeveloperDetails = [
       { name: "ReactJS", percentage: "88%", color: "bg-primary" },
     ],
 
+    laguages: ["Hindi", "English", "Urdu"],
+
+    
+    projects:["School Management System", "Grocery Stores","Banking System", "My Porfolio"],
+
     socialLinks: {
       facebook: "https://www.facebook.com/mdakhtarali2484",
       linkedin: "https://www.linkedin.com/in/mdakhtarali/",

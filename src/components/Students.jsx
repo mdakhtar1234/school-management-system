@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import students from '../assets/studentsData'
 import { useForm } from 'react-hook-form'
+import Footer from './Footer'
 
 function Students() {
 
@@ -192,7 +193,9 @@ function Students() {
             </table>
           </div>
         </div>
-      </div></>
+      </div>
+      <Footer/>
+      </>
   )
 }
 
