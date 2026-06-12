@@ -25,19 +25,19 @@ function Developer() {
 
                 <div className="mt-4">
                   <a href={detail.socialLinks.facebook}
-                    className="btn btn-light m-1"
+                    className="btn btn-light btn-sm m-1"
                   >
                     facebook
                   </a>
 
                   <a href={detail.socialLinks.linkedin}
-                    className="btn btn-light m-1"
+                    className="btn btn-light btn-sm m-1 "
                   >
                     Linkedin
                   </a>
 
                   <a href={detail.socialLinks.github}
-                    className="btn btn-light m-1"
+                    className="btn btn-light btn-sm m-1"
                   >
                     Github
                   </a>

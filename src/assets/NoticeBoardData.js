@@ -3,7 +3,7 @@ const notices = [
       id: 1,
       title: "Summer Vacation",
       date: "10 June 2026",
-      description: "School will remain closed from 15 June to 30 June."
+      description: ["School will remain closed from 15 June to 30 June."]
     },
     {
       id: 2,
