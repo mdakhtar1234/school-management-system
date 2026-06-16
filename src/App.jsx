@@ -11,63 +11,73 @@ import Teacher from './components/Teacher'
 import Result from './components/Result'
 import Attendance from './components/Attendance'
 import Developer from './components/Developer'
+import Login from './components/Login'
+import Signup from './components/Signup'
 
 
 const routers = createBrowserRouter([
-  {  
-    path:"",
-    element:<Layout/>,
-    children:[
+  {
+    path: "",
+    element: <Layout />,
+    children: [
       {
-        index:true,
-        element:<Home/>
-      },
-      {
-        path:"contact",
-        element:<Contact/>
+        index: true,
+        element: <Home />
       },
       {
-        path:"admission",
-        element:<AddmissionForm/>
+        path: "login",
+        element: <Login />
       },
       {
-        path:"attendance",
-        element:<Attendance/>
+        path: "signUp",
+        element: <Signup />
       },
       {
-        path:"dashboard",
-        element:<Dashboard/>
+        path: "contact",
+        element: <Contact />
       },
       {
-        path:"noticeboard",
-        element:<NoticeBoard/>
-      },
-    {
-        path:"student",
-        element:<Students/>
+        path: "admission",
+        element: <AddmissionForm />
       },
       {
-        path:"teacher",
-        element:<Teacher/>
+        path: "attendance",
+        element: <Attendance />
       },
-       {
-        path:"result",
-        element:<Result/>
+      {
+        path: "dashboard",
+        element: <Dashboard />
+      },
+      {
+        path: "noticeboard",
+        element: <NoticeBoard />
+      },
+      {
+        path: "student",
+        element: <Students />
+      },
+      {
+        path: "teacher",
+        element: <Teacher />
+      },
+      {
+        path: "result",
+        element: <Result />
       },
 
       {
-        path:"developer",
-        element:<Developer/>
+        path: "developer",
+        element: <Developer />
       },
     ]
 
-}])
+  }])
 function App() {
   return (
-   <>
-    <RouterProvider router={routers} />
-  
-   </>
+    <>
+      <RouterProvider router={routers} />
+
+    </>
   )
 }
 

@@ -1,8 +1,16 @@
 import { useState,useEffect } from "react";
 import Footer from "./Footer";
 
+import {useNavigate}from 'react-router-dom'
+
 
 function Dashboard() {
+
+    const navigate = useNavigate();
+
+     const handleLogout = () => {
+    navigate("/");
+  };
 
 const [studentCounter, setStudentCounter] = useState(0);
 const [teacherCounter, setTeacherCounter] = useState(0);
@@ -28,6 +36,10 @@ useEffect(() => {
 
   return (
     <>
+     <div> <button onClick={handleLogout}>
+        Logout
+      </button></div>
+    
      <div className="container mt-4">
       <h2 className="text-center mb-4">School Management Dashboard</h2>
 

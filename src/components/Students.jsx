@@ -12,6 +12,9 @@ function Students() {
   const submitHandle = (data) => {
     console.log(data)
   }
+
+
+  
   return (
 
     <>
@@ -138,15 +141,21 @@ function Students() {
 
 
 
-
-
       <div className="container mt-4">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h2>Student Management</h2>
 
-          <button className="btn btn-primary">
-            Add Student
+
+        </div>
+        <div className='px-3 py-1'>
+          <input className='px-1 py-1 rounded-3'
+            placeholder='Saerch Student Name'
+          ></input>
+          <button className="btn btn-primary m-1  ">
+            Search
           </button>
+          
+
         </div>
 
         <div className="card shadow">
@@ -194,8 +203,8 @@ function Students() {
           </div>
         </div>
       </div>
-      <Footer/>
-      </>
+      <Footer />
+    </>
   )
 }
 
