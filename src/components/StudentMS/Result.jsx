@@ -1,6 +1,6 @@
 import React from 'react'
-import results from '../assets/ResultData';
-import Footer from './Footer';
+import results from '../../assets/ResultData';
+import Footer from '../Footer';
 function Result() {
 
 
@@ -69,7 +69,7 @@ function Result() {
         </div>
 
       </div>
-      <Footer/>
+      <Footer />
     </>
 
   );

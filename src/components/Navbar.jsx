@@ -35,47 +35,24 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/student">
-                  Student
+                <Link className="nav-link" to="/StudentDashboard">
+                  StudentDashboard
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/teacher">
-                  Teacher
+                <Link className="nav-link" to="/TeacherDashboard">
+                  TeacherDashboard
                 </Link>
               </li>
+
+             
 
               <li className="nav-item">
-                <Link className="nav-link" to="/attendance">
-                  Attendance
+                <Link className="nav-link" to="/CoordinatorDashboard">
+                  Coordinator
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/admission">
-                  Admission
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/result">
-                  Result
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/noticeboard">
-                  Notice Board
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contact
-                </Link>
-              </li>
-
 
               <li className="nav-item">
                 <Link className="nav-link" to="/developer">

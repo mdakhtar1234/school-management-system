@@ -1,18 +1,14 @@
 import React from 'react'
-import AddmissionForm from './components/AddmissionForm'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
-import Contact from './components/Contact'
 import Dashboard from './components/Dashboard'
-import NoticeBoard from './components/NoticeBoard'
-import Students from './components/Students'
-import Teacher from './components/Teacher'
-import Result from './components/Result'
-import Attendance from './components/Attendance'
 import Developer from './components/Developer'
 import Login from './components/Login'
 import Signup from './components/Signup'
+import StudentDashboard from './components/StudentMS/StudentDashboard'
+import TeacherDashboard from './components/TeacherMS/TeacherDashboard'
+import CoordinatorDashboard from './components/CoordinatorMS/CoordinatorDashboard'
 
 
 const routers = createBrowserRouter([
@@ -32,43 +28,31 @@ const routers = createBrowserRouter([
         path: "signUp",
         element: <Signup />
       },
-      {
-        path: "contact",
-        element: <Contact />
-      },
-      {
-        path: "admission",
-        element: <AddmissionForm />
-      },
-      {
-        path: "attendance",
-        element: <Attendance />
-      },
+
       {
         path: "dashboard",
         element: <Dashboard />
       },
+
       {
-        path: "noticeboard",
-        element: <NoticeBoard />
+        path: "StudentDashboard",
+        element: <StudentDashboard />
       },
       {
-        path: "student",
-        element: <Students />
+        path: "TeacherDashboard",
+        element: <TeacherDashboard />
       },
       {
-        path: "teacher",
-        element: <Teacher />
-      },
-      {
-        path: "result",
-        element: <Result />
+        path: "CoordinatorDashboard",
+        element: <CoordinatorDashboard />
       },
 
       {
         path: "developer",
         element: <Developer />
       },
+
+
     ]
 
   }])
@@ -76,6 +60,8 @@ function App() {
   return (
     <>
       <RouterProvider router={routers} />
+
+
 
     </>
   )

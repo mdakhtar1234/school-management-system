@@ -1,7 +1,7 @@
 const DeveloperDetails = [
   {
     id: 1,
-    name: "Md Akhtar Ali",
+    name: "MD AKHTAR ALI",
     phone: "7091515992",
     email: "amd064754@gmail.com",
     domain: "Frontend React Developer",

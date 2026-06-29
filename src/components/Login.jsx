@@ -14,10 +14,13 @@ function Login() {
       user &&
       user.username === username &&
       user.password === password
-    ) {
+    ) 
+
+    {
       navigate("/dashboard");
     } else {
-      alert("Invalid Username or Password");
+     alert("Invalid Username or Password");
+    
     }
   };
 
@@ -52,6 +55,7 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+          
         </div>
 
         <button
