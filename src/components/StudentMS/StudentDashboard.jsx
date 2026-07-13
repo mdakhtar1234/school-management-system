@@ -1,13 +1,25 @@
 import React, { useState, useEffect } from "react";
 import Result from "./Result";
+import { Link } from "react-router-dom";
 
 function StudentDashboard() {
+
+      const courses2 = [
+    { id: 1, title: "Web Development 10.0", progress: 100 },
+    { id: 2, title: "ReactJS Mastery", progress: 75 },
+    { id: 3, title: "Java Full Stack", progress: 50 },
+    { id: 4, title: "JavaScript Basics", progress: 30 },
+    { id: 5, title: "SQL Practice", progress: 90 },
+    { id: 6, title: "NodeJS API", progress: 60 }
+  ];
     const [student, setStudent] = useState({});
     const [courses, setCourses] = useState([]);
+    
+    
 
     useEffect(() => {
         setStudent({
-            name: "Ali",
+            name: "MD AKHTAR ALI",
             course: "Java Full Stack Development",
             attendance: "92%",
             marks: 85,
@@ -18,6 +30,7 @@ function StudentDashboard() {
             {
                 id: 1,
                 title: "HTML & CSS",
+                description:"Types of Heading",
                 status: "Completed",
             },
             {
@@ -33,6 +46,9 @@ function StudentDashboard() {
         ]);
     }, []);
 
+
+   
+
     return (
         <>
             <div className="container mt-5">
@@ -40,57 +56,147 @@ function StudentDashboard() {
 
                 {/* Student Details */}
                 <div className="card shadow p-4 mb-4">
-                    <h3>Student Details</h3>
+                    <h3>WELCOME TO, <span className="text-primary">{student.name}</span></h3>
                     <hr />
 
                     <p><strong>Name:</strong> {student.name}</p>
                     <p><strong>Course:</strong> {student.course}</p>
-                    <p><strong>Attendance:</strong> {student.attendance}</p>
+                    <p><strong>Attendance <span className="text-primary">Score :</span></strong> {student.attendance}</p>
                     <p><strong>Marks:</strong> {student.marks}</p>
                 </div>
 
-                {/* Progress Card */}
-                <div className="card shadow p-4 mb-4">
-                    <h3>Course Progress</h3>
+              
 
-                    <div className="progress mt-3" style={{ height: "25px" }}>
-                        <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: `${student.progress}%` }}
-                        >
-                            {student.progress}%
-                        </div>
-                    </div>
-                </div>
+              {/** learnCard */}
 
-                {/* Course Cards */}
-                <h3 className="mb-3">My Courses</h3>
+ <h3 className="mb-3">My Courses</h3>
+              <div className="container mt-5">
+      <div
+        className="card shadow-md border-0 rounded-4"
+        style={{ background: "white" }}
+      >
+        <div className="card-body p-4">
 
-                <div className="row">
-                    {courses.map((course) => (
-                        <div className="col-md-4 mb-3" key={course.id}>
-                            <div className="card shadow h-100">
-                                <div className="card-body">
-                                    <h5>{course.title}</h5>
-                                    <p>
-                                        Status:
-                                        <span
-                                            className={`ms-2 badge ${course.status === "Completed"
-                                                    ? "bg-success"
-                                                    : "bg-warning text-dark"
-                                                }`}
-                                        >
-                                            {course.status}
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+          <h4 className="fw-bold mb-3">
+            Web Development Essentials 10.0
+          </h4>
+
+          {/* Badges */}
+
+          <div className="d-flex flex-wrap gap-2 mb-4">
+
+            <span className="badge bg-white text-dark border px-3 py-2">
+                📁 26 Topics
+            </span>
+
+            <span className="badge bg-white text-dark border px-3 py-2">
+                ▶️ 21 Videos
+            </span>
+
+            <span className="badge bg-white text-dark border px-3 py-2">
+                📝 6 Assignments
+            </span>
+
+            <span className="badge bg-white text-dark border px-3 py-2">
+                ✔️ 1 Test
+            </span>
+
+          </div>
+
+          {/* Progress */}
+
+          <div className="d-flex justify-content-between mb-2">
+            <h6 className="mb-0">Progress</h6>
+            <span className="fw-semibold">100%</span>
+          </div>
+
+          <div
+            className="progress"
+            style={{ height: "12px", borderRadius: "10px" }}
+          >
+            <div
+              className="progress-bar bg-primary"
+              style={{ width: "100%" }}
+            ></div>
+          </div>
+
+          <small className="text-muted">Completed</small>
+
+          {/* Button */}
+
+          <button className="btn btn-success w-100 mt-4 py-3 fw-bold rounded-3">
+            Continue Learning
+          </button>
+
+        </div>
+      </div>
+             </div> 
+
+<hr/>
+             {/** another card */}
+              <div className="container mt-5">
+      <div
+        className="card shadow-md border-0 rounded-4"
+        style={{ background: "white" }}
+      >
+        <div className="card-body p-4">
+
+          <h4 className="fw-bold mb-3">
+            React Essentials 10.0
+          </h4>
+
+          {/* Badges */}
+
+          <div className="d-flex flex-wrap gap-2 mb-4">
+
+            <span className="badge bg-white text-dark border px-3 py-2">
+                📁 26 Topics
+            </span>
+
+            <span className="badge bg-white text-dark border px-3 py-2">
+                ▶️ 21 Videos
+            </span>
+
+            <span className="badge bg-white text-dark border px-3 py-2">
+                📝 6 Assignments
+            </span>
+
+            <span className="badge bg-white text-dark border px-3 py-2">
+                ✔️ 1 Test
+            </span>
+
+          </div>
+
+          {/* Progress */}
+
+          <div className="d-flex justify-content-between mb-2">
+            <h6 className="mb-0">Progress</h6>
+            <span className="fw-semibold">100%</span>
+          </div>
+
+          <div
+            className="progress"
+            style={{ height: "12px", borderRadius: "10px" }}
+          >
+            <div
+              className="progress-bar bg-primary"
+              style={{ width: "100%" }}
+            ></div>
+          </div>
+
+          <small className="text-muted">Completed</small>
+
+          {/* Button */}
+
+          <button  className="btn btn-success w-100 mt-4 py-3 fw-bold rounded-3">
+            Continue Learning
+          </button>
+
+        </div>
+      </div>
+             </div>   
             </div>
-            <Result />
+            
         </>
     );
 }

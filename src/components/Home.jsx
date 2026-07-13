@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -29,8 +30,10 @@ function Home() {
         <div className="row g-4">
           <div className="col-md-4">
             <div className="card shadow h-100">
+               
               <div className="card-body text-center">
-                <h4>👨‍🎓 Students</h4>
+                <Link to="/StudentDashboard"><h4>👨‍🎓 Students</h4></Link>
+               
                 <p>
                   Manage student records, profiles, and academic details.
                 </p>

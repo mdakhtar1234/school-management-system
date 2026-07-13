@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Footer from "../Footer";
 
 function CoordinatorDashboard() {
   const [coordinator, setCoordinator] = useState({});
@@ -103,6 +104,8 @@ function CoordinatorDashboard() {
           </div>
         ))}
       </div>
+
+      <Footer/>
     </div>
   );
 }

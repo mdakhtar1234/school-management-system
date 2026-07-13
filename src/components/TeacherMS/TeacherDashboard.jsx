@@ -113,8 +113,7 @@ function TeacherDashboard() {
                 </div>
             </div>
 
-            <TotalStudent />
-            <Attendance />
+           
 
         </>
 
