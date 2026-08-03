@@ -60,6 +60,12 @@ function Navbar() {
                 </Link>
               </li>
 
+          <li className="nav-item">
+                <Link className="nav-link" to="/ListOfStudents">
+                  ListOfStudents
+                </Link>
+              </li>
+  
             </ul>
           </div>
         </div>

@@ -9,6 +9,7 @@ import Signup from './components/Signup'
 import StudentDashboard from './components/StudentMS/StudentDashboard'
 import TeacherDashboard from './components/TeacherMS/TeacherDashboard'
 import CoordinatorDashboard from './components/CoordinatorMS/CoordinatorDashboard'
+import ListOfStudents from './components/TeacherMS/ListOfStudents'
 
 
 const routers = createBrowserRouter([
@@ -51,6 +52,15 @@ const routers = createBrowserRouter([
         path: "developer",
         element: <Developer />
       },
+
+
+        {
+        path: "ListOFStudents",
+        element: <ListOfStudents/>
+      },
+
+
+
 
 
     ]

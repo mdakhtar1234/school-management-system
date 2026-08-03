@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import TotalStudent from "./TotalStudent";
 import Attendance from "./Attendance";
 import Result from "../StudentMS/Result";
+import img2 from '../TeacherMS/image/developerImage.jpg';
+
+
 
 function TeacherDashboard() {
     const [teacher, setTeacher] = useState({});
@@ -9,7 +12,7 @@ function TeacherDashboard() {
 
     useEffect(() => {
         setTeacher({
-            name: "John Smith",
+            name: "Ankur Kumar",
             subject: "Full Stack Development",
             students: 120,
             attendance: "95%",
@@ -49,6 +52,23 @@ function TeacherDashboard() {
                 <div className="card shadow p-4 mb-4">
                     <h3>Teacher Profile</h3>
                     <hr />
+                    
+           <div
+        className="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center"
+        style={{
+          width: "100px",
+          height: "100px",
+          fontSize: "20px",
+          fontWeight: "bold",
+        }}
+      >
+        <img
+          src={img2}
+         alt="Profile"
+         className="w-100 h-100 object-fit-cover rounded-circle"
+  />
+      </div>
+      
 
                     <p>
                         <strong>Name:</strong> {teacher.name}
@@ -104,7 +124,9 @@ function TeacherDashboard() {
                                     </p>
 
                                     <button className="btn btn-primary">
-                                        View Details
+                                        View Details 
+                                        
+
                                     </button>
                                 </div>
                             </div>
@@ -113,7 +135,7 @@ function TeacherDashboard() {
                 </div>
             </div>
 
-           
+      
 
         </>
 
