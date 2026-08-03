@@ -1,6 +1,7 @@
 import React from 'react'
 import DeveloperDetails from '../assets/DeveloperDetails';
 import img1 from '../assets/images/developerImage.jpg';
+
 import Footer from './Footer';
 function Developer() {
   return (
@@ -107,7 +108,7 @@ function Developer() {
 
       ))}
 
-      <Footer />
+    
     </>
   )
 }
