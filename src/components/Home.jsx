@@ -32,7 +32,7 @@ function Home() {
             <div className="card shadow h-100">
                
               <div className="card-body text-center">
-                <Link to="/StudentDashboard"><h4>👨‍🎓 Students</h4></Link>
+                <Link to="/StudentDashboard"><h4 className='text-black'>👨‍🎓 Students</h4></Link>
                
                 <p>
                   Manage student records, profiles, and academic details.
@@ -44,7 +44,9 @@ function Home() {
           <div className="col-md-4">
             <div className="card shadow h-100">
               <div className="card-body text-center">
-                <h4>👨‍🏫 Teachers</h4>
+                <Link to="/Teachers">
+                 <h4 className='text-black'>👨‍🏫 Teachers</h4>
+                </Link>
                 <p>
                   Maintain teacher information and department records.
                 </p>

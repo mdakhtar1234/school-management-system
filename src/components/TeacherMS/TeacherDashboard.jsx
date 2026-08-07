@@ -3,6 +3,7 @@ import TotalStudent from "./TotalStudent";
 import Attendance from "./Attendance";
 import Result from "../StudentMS/Result";
 import img2 from '../TeacherMS/image/developerImage.jpg';
+import { Link } from "react-router-dom";
 
 
 
@@ -52,23 +53,23 @@ function TeacherDashboard() {
                 <div className="card shadow p-4 mb-4">
                     <h3>Teacher Profile</h3>
                     <hr />
-                    
-           <div
-        className="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center"
-        style={{
-          width: "100px",
-          height: "100px",
-          fontSize: "20px",
-          fontWeight: "bold",
-        }}
-      >
-        <img
-          src={img2}
-         alt="Profile"
-         className="w-100 h-100 object-fit-cover rounded-circle"
-  />
-      </div>
-      
+
+                    <div
+                        className="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center"
+                        style={{
+                            width: "100px",
+                            height: "100px",
+                            fontSize: "20px",
+                            fontWeight: "bold",
+                        }}
+                    >
+                        <img
+                            src={img2}
+                            alt="Profile"
+                            className="w-100 h-100 object-fit-cover rounded-circle"
+                        />
+                    </div>
+
 
                     <p>
                         <strong>Name:</strong> {teacher.name}
@@ -113,7 +114,7 @@ function TeacherDashboard() {
                 <h3 className="mb-3">Assigned Courses</h3>
 
                 <div className="row">
-                    {courses.map((course) => (
+                    {courses.map((course, index) => (
                         <div className="col-md-3 mb-3" key={course.id}>
                             <div className="card shadow h-100">
                                 <div className="card-body">
@@ -123,19 +124,17 @@ function TeacherDashboard() {
                                         <strong>Students:</strong> {course.students}
                                     </p>
 
-                                    <button className="btn btn-primary">
-                                        View Details 
-                                        
-
-                                    </button>
+                                    <Link to={`/students/${index}`}>
+                                        <button className="btn btn-primary">
+                                            View Details
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-
-      
 
         </>
 

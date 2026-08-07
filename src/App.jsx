@@ -52,16 +52,10 @@ const routers = createBrowserRouter([
         path: "developer",
         element: <Developer />
       },
-
-
-        {
-        path: "ListOFStudents",
-        element: <ListOfStudents/>
-      },
-
-
-
-
+      {
+        path: 'students/:id',
+        element: <ListOfStudents />
+      }
 
     ]
 
